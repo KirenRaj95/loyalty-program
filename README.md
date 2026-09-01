@@ -78,7 +78,7 @@ That unique constraint on `vouchers.receiptId` is a deliberate choice: it makes 
 
 ```bash
 git clone https://github.com/KirenRaj95/loyalty-program.git
-cd "loyalty-program"
+cd loyalty-program
 ```
 
 ### 2. Backend setup
