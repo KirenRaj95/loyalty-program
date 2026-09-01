@@ -88,7 +88,7 @@ cd server
 npm install
 ```
 
-Create a `.env` file (copy from `.env.example`) and fill in real values:
+Create a `.env` file (copy from `.env_example`) and fill in real values:
 
 ```bash
 cp .env_example .env
@@ -161,7 +161,7 @@ cd client
 npm install
 ```
 
-Create `client/.env` (copy from `.env.example`):
+Create `client/.env` (copy from `.env_example`):
 
 ```bash
 cp .env_example .env
