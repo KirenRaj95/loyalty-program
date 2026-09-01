@@ -1,4 +1,4 @@
-# Loyalty Program (Kiren Raj a/l Muniandy)
+# Loyalty Program 
 
 A full-stack web application where users register, submit purchase receipts, and receive vouchers once an administrator validates their receipt.
 
@@ -77,8 +77,8 @@ That unique constraint on `vouchers.receiptId` is a deliberate choice: it makes 
 ### 1. Clone the repository
 
 ```bash
-git clone <https://github.com/KirenRaj95/loyalty-program.git>
-cd "loyalty-program"
+git clone https://github.com/KirenRaj95/loyalty-program.git
+cd loyalty-program
 ```
 
 ### 2. Backend setup
