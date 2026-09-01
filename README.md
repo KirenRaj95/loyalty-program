@@ -1,4 +1,4 @@
-# Loyalty Program (Kiren Raj a/l Muniandy)
+# Loyalty Program 
 
 A full-stack web application where users register, submit purchase receipts, and receive vouchers once an administrator validates their receipt.
 
