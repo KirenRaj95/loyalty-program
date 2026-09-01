@@ -1,4 +1,4 @@
-# Loyalty Program 
+# Loyalty Program
 
 A full-stack web application where users register, submit purchase receipts, and receive vouchers once an administrator validates their receipt.
 
@@ -91,7 +91,7 @@ npm install
 Create a `.env` file (copy from `.env.example`) and fill in real values:
 
 ```bash
-cp .env.example .env
+cp .env_example .env
 ```
 
 ```
@@ -124,27 +124,33 @@ Create the database:
 psql -U postgres
 ```
 
+Then run:
+
 ```sql
 CREATE DATABASE loyalty_program;
 ```
 
 The application uses `sequelize.sync()` on startup to create tables automatically based on the models — no separate migration step is required for first-time setup.
 
-### 4. Seed the admin account
-
-```bash
-npm run seed
-```
-
-This creates one admin account using the `ADMIN_EMAIL`/`ADMIN_PASSWORD` from your `.env`. Running it again is safe — it detects an existing admin and skips.
-
-### 5. Run the backend
+### 4. Run the backend
 
 ```bash
 npm run dev
 ```
 
 Server runs on `http://localhost:5000` by default.
+
+On startup, Sequelize connects to the `loyalty_program` database and automatically creates the required tables.
+
+### 5. Seed the admin account
+
+Once the backend has started successfully and the database tables have been created, open a **new terminal** and run:
+
+```bash
+npm run seed
+```
+
+This creates one admin account using the `ADMIN_EMAIL`/`ADMIN_PASSWORD` from your `.env`. Running it again is safe — it detects an existing admin and skips.
 
 ### 6. Frontend setup
 
@@ -158,7 +164,7 @@ npm install
 Create `client/.env` (copy from `.env.example`):
 
 ```bash
-cp .env.example .env
+cp .env_example .env
 ```
 
 ```
